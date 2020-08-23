@@ -63,7 +63,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../../images/banner.png);
+    background-image: url(../images/banner.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
