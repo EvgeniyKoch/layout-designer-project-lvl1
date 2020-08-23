@@ -47,6 +47,7 @@ img {
 }
 
 .menu-item a {
+    font-weight: bold;
     text-decoration: none;
     color: inherit;
     transition: .3s;
@@ -57,15 +58,15 @@ img {
 }
 
 .preview {
+    padding:190px 0 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../images/banner.png);
+    background-image: url(../../images/banner.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
 }
 
 .preview-logo {
@@ -117,8 +118,9 @@ img {
 }
 
 .advantages-item {
-    flex:0 0 33%;
+    flex: 0 0 32%;
     padding: 0 5px;
+    word-break: break-word;
 }
 
 .title {
