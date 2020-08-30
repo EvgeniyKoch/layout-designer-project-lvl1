@@ -6,42 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> ЖК «Лунное море» - parovoz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-<div class="head-fixed">
-    <header class="header">
-        <div class="logo">
-            <div class="logo-img-wrap">
-                <img src="images/logo.svg" alt="logo">
-            </div>
-            <span class="logo-title">Лунное море</span>
+<header class="header between">
+    <div class="logo">
+        <div class="logo-img-wrap">
+            <img src="images/logo.svg" alt="logo">
         </div>
-        <nav>
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#advantages"><strong>Преимущиства</strong></a>
-                </li>
-                <li class="menu-item">
-                    <a href="#about">О ЖК</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#chill">Места для отдыха</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</div>
+        <span class="logo-title">Лунное море</span>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#advantages"><strong>Преимущиства</strong></a>
+            </li>
+            <li class="menu-item">
+                <a href="#about">О ЖК</a>
+            </li>
+            <li class="menu-item">
+                <a href="#chill">Места для отдыха</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 <main>
     <section class="preview">
-        <div class="preview-logo">
-            <img src="images/logo.svg" alt="preview-logo">
+        <div class="container center-column">
+            <div class="preview-logo">
+                <img src="images/logo.svg" alt="preview-logo">
+            </div>
+            <h1 class="preview-title">ЖК «Лунное море»</h1>
+            <p class="preview-subtitle">Место, откуда не хочется улетать</p>
+            <a href="#form" class="btn">
+                Забронировать
+            </a>
         </div>
-        <h1 class="preview-title">ЖК «Лунное море»</h1>
-        <p class="preview-subtitle">Место, откуда не хочется улетать</p>
-        <a href="#form" class="preview-btn">
-            Забронировать
-        </a>
     </section>
     <section id="advantages" class="advantages">
         <div class="container">
@@ -76,28 +77,28 @@
             </ul>
         </div>
     </section>
-    <section id="about" class="section-about">
-        <div class="container">
-            <div class="about">
-                <div class="about-description">
-                    <h2 class="title">О ЖК «Лунное море»</h2>
-                    <div class="describe">
-                        Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с
-                        мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до
-                        столицы и обратно.
+    <section id="about">
+        <div class="bgc-grey">
+            <div class="container">
+                <div class="about">
+                    <div class="about-description">
+                        <h2 class="title">О ЖК «Лунное море»</h2>
+                        <div class="describe">
+                            Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с
+                            мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до
+                            столицы и обратно.
+                        </div>
+                        <div class="describe">
+                            Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от
+                            Земли.
+                        </div>
                     </div>
-                    <div class="describe">
-                        Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от
-                        Земли.
+                    <div class="about-img">
+                        <img src="images/moon-1.jpg" alt="moon">
                     </div>
-                </div>
-                <div class="about-img">
-                    <img src="images/moon-1.jpg" alt="moon">
                 </div>
             </div>
         </div>
-    </section>
-    <section id="chill" class="section-about">
         <div class="container">
             <div class="about">
                 <div class="about-img">
@@ -119,13 +120,13 @@
             </div>
         </div>
     </section>
-    <section id="form">
+    <section id="form" class="bgc-grey">
         <div class="form-container">
-            <h2 class="form-title">Оставьте заявку сегодня!</h2>
+            <h2 class="title form-title">Оставьте заявку сегодня!</h2>
             <form class="form">
                 <fieldset>
                     <legend>Параметры квартиры</legend>
-                    <div class="field">
+                    <div class="field between">
                         <label for="rooms">Количество комнат</label>
                         <select id="rooms" name="rooms" required>
                             <option value="">&nbsp;</option>
@@ -134,7 +135,7 @@
                             <option value="free">3</option>
                         </select>
                     </div>
-                    <div class="field">
+                    <div class="field between">
                         <label for="decor">Отделка:</label>
                         <select id="decor" name="decor" required>
                             <option value="">&nbsp;</option>
@@ -146,27 +147,27 @@
                 </fieldset>
                 <fieldset>
                     <legend>Контактная информация:</legend>
-                    <div class="field">
+                    <div class="field between">
                         <label for="name">Имя:</label>
                         <input type="text" name="name" id="name">
                     </div>
-                    <div class="field">
+                    <div class="field between">
                         <label for="phone">Телефон:</label>
                         <input type="text" name="phone" id="phone">
                     </div>
-                    <div class="field">
+                    <div class="field between">
                         <label for="mail">E-mail:</label>
                         <input type="text" name="mail" id="mail">
                     </div>
                 </fieldset>
-                <button type="submit">Отправить</button>
+                <button class="btn" type="submit">Отправить</button>
             </form>
         </div>
     </section>
 </main>
 <footer>
     <div class="container">
-        <ul class="footer-list">
+        <ul class="between">
             <li class="footer-item">
                 <div class="logo">
                     <div class="logo-img-wrap">
@@ -175,7 +176,7 @@
                     <span class="logo-title">Лунное море</span>
                 </div>
                 <div class="date">
-                    <span>©</span>
+                    <small>©</small>
                     <span class="year"></span>
                     <span>год</span>
                 </div>
