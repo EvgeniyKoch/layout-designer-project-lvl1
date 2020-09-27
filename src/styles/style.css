@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   color: #303846;
   font-size: 16px;
@@ -76,8 +79,12 @@ img {
   color: deepskyblue;
 }
 
+.main {
+  margin-top: 60px;
+}
+
 .preview {
-  padding: 120px 0 60px;
+  padding: 60px 0;
   background-image: url(../images/banner.png);
   background-size: cover;
   background-position: center;
@@ -165,17 +172,13 @@ img {
   padding: 60px 0;
 }
 
-.form-container {
-  max-width: 50vw;
-  margin: auto;
-}
-
 .form-title {
   text-align: center;
 }
 
 .form {
-  margin-top: 30px;
+  max-width: 50vw;
+  margin:30px auto 0;
 }
 
 .form:nth-child(2) fieldset {
@@ -208,7 +211,7 @@ legend {
 
 .field select {
   outline: none;
-  min-width: 150px;
+  min-width: 200px;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 10px;
@@ -216,7 +219,7 @@ legend {
 
 .field input {
   outline: none;
-  min-width: 250px;
+  min-width: 200px;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 10px;
